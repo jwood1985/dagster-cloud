@@ -1,6 +1,7 @@
 from dagster import DefaultScheduleStatus, ScheduleDefinition
 
 from ..jobs.compute_cereal_properties.process_cereals import compute_cereal_properties
+import autodynatrace
 
 daily_compute_cereal_properties = ScheduleDefinition(
     name="daily_compute_cereal_properties",
