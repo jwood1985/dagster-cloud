@@ -6,8 +6,9 @@ from .ops import (
     find_highest_calorie_cereal,
     find_highest_protein_cereal,
 )
+import autodynatrace
 
-
+@autodynatrace.trace
 @job
 def compute_cereal_properties():
     cereals = download_cereals()
